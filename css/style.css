@@ -532,40 +532,12 @@ body {
 
 /*MEDIA QUERIES*/
 /*INDEX y NUESTRO MENU*/
-/*@media screen and (max-width: 1330px) {
-  .section3 {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .section3 div img {
-    width: auto;
-    height: 140px;
-  }
-  .section3 h3 {
-    font-size: 18px;
-  }
-  .section3 h2 {
-    text-align: left;
-  }
-  .section3 div button {
-    padding: 6px 20px 6px 20px;
+@media screen and (max-width: 1107px) {
+  .favoritos a {
+    width: 150px;
   }
 }
-@media screen and (max-width: 1225px) {
-  /*NUESTRO MENU*
-  .section2 div img {
-    width: 600px;
-  }
-  .section3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }*/
+
 @media screen and (max-width: 1030px) {
   .favoritos a {
     width: 20%;
@@ -613,18 +585,22 @@ body {
     padding: 5px 0px 0px 20px;
     font-size: large;
   }
+
   /*nuestro menu*/
   .section3 div img {
     width: auto;
     height: 160px;
   }
+
   .section3 h3 {
     font-size: 25px;
   }
+
   .section3 div button {
     padding: 6px 20px 6px 20px;
   }
 }
+
 @media screen and (max-width: 1011px) {
   .footer {
     display: flex;
@@ -640,17 +616,6 @@ body {
 }
 
 @media screen and (max-width: 837px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
   .favoritos {
     height: auto;
     display: flex;
@@ -702,10 +667,12 @@ body {
   .footer div {
     display: inline-block;
   }
+
   /*NUESTRO MENU*/
   .section2 div img {
     width: 600px;
   }
+
   .section4 div img {
     width: 470px;
   }
@@ -738,47 +705,104 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .favoritos a {
     font-size: 12px;
+    width: 140px;
   }
+
   .favoritos div button {
     font-size: 14px;
   }
+
+  .promos div {
+    width: 100%;
+  }
+
   /*nuestro menu*/
   .section4 div img {
     width: 350px;
   }
+
   .section3 div img {
     width: auto;
     height: 130px;
   }
+
   .cafetransparente {
     height: 120px;
     width: auto;
   }
+
   .section2 div img {
     width: 480px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .favoritos a {
+    font-size: 12px;
+    width: 140px;
+    font-weight: 700;
+  }
+
   .promos img {
     width: 350px;
     height: auto;
   }
+
   .section2 div img {
     display: none;
   }
+
   .section3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
+
   .section3 div {
     margin: 5px 30px 10px 30px;
   }
+
   .section4 div img {
     width: 270px;
+  }
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .promos h2 {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .promos div {
+    width: 100%;
+  }
+
+  .carrusel h2 {
+    text-align: center;
+    margin: 20px 0 10px 0px;
+    font-family: raleway;
+    font-weight: 800;
+    font-size: 22px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
   }
 }
