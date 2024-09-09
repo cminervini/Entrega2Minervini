@@ -9,18 +9,6 @@
 }
 
 /**HEADER*/
-/** ANTERIOR A BOOTSTRAP
-header {
-  background-image: url(../img/texturaheader.png);
-  background-color: #f8f4e3;
-  padding: 20px;
-  position: sticky;
-  top: 0px;
-  font-family: raleway;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
 .bg-body-tertiary {
   background-image: url(../img/texturaheader.png);
   background-color: #f8f4e3c5;
@@ -60,6 +48,12 @@ header {
   font-weight: 500;
   text-decoration: none;
   color: #08243a;
+  transition: 0.5s;
+}
+.header nav ul li a:hover {
+  color: #0d3b5e;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .header nav ul li {
@@ -67,20 +61,10 @@ header {
   margin-right: 20px;
 }
 
-/**clases a elementos ej boton con color y borde class*/
-
 /**---MAIN----*/
 .main img {
   width: 100%;
   height: auto;
-}
-
-.arriba {
-  position: absolute;
-  background-color: #d39f56;
-  border-radius: 30px;
-  top: 40px;
-  right: 40px;
 }
 
 .favoritos h1 {
@@ -118,6 +102,13 @@ header {
   text-align: center;
   border-radius: 15px;
   display: inline-block;
+  transition: 0.8s;
+}
+.favoritos div:hover {
+  transform: scale(1.2);
+  -webkit-box-shadow: 18px 14px 34px -12px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 18px 14px 34px -12px rgba(0, 0, 0, 0.29);
+  box-shadow: 18px 14px 34px -12px rgba(0, 0, 0, 0.29);
 }
 
 .favoritos div img {
@@ -128,7 +119,6 @@ header {
 }
 
 .favoritos div h3 {
-  /*margin-bottom: 20px;*/
   color: #08243a;
 }
 
@@ -148,6 +138,12 @@ header {
   margin: 0 5px 0 5px;
   border-radius: 14px;
   border-color: #08243a34;
+  transition: 0.5s;
+}
+.favoritos div button:hover {
+  background-color: #ffb95c;
+  color: #08243a;
+  font-weight: 700;
 }
 
 .favoritos a {
@@ -161,8 +157,13 @@ header {
   text-decoration: none;
   border-radius: 14px;
   position: static;
+  transition: 0.5s;
 }
-
+.favoritos a:hover {
+  background-color: #ffb95c;
+  color: #08243a;
+  font-weight: 700;
+}
 .promos {
   margin: 30px;
   font-family: raleway;
@@ -183,6 +184,12 @@ header {
 .promos img {
   width: 700px;
   height: auto;
+  transition: 0.4s;
+}
+.promos img:hover {
+  -webkit-box-shadow: 18px 14px 48px -12px rgba(209, 209, 209, 1);
+  -moz-box-shadow: 18px 14px 48px -12px rgba(209, 209, 209, 1);
+  box-shadow: 18px 14px 48px -12px rgba(209, 209, 209, 1);
 }
 
 .seccioncarrusel {
@@ -196,14 +203,6 @@ header {
   width: 50px;
   height: auto;
 }
-
-.merchtext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .seccioncarrusel div p {
   padding: 0px 0px 0px 20px;
   text-align: center;
@@ -229,6 +228,13 @@ header {
   z-index: -11;
 }
 
+.merchtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .fotofinal {
   background-color: #08243a;
   margin-top: 20px;
@@ -252,7 +258,6 @@ header {
 
 .footer iframe {
   padding-top: 20px;
-  margin-left: 30px;
 }
 
 .footer div a img {
@@ -350,6 +355,23 @@ header {
   margin: 0 5px 0 5px;
   border-radius: 20px;
   border-color: #d39f5627;
+  transition: 0.5s;
+}
+.section3 div button:hover {
+  background-color: #08243a;
+  color: #d39f56;
+  font-weight: 700;
+  display: inline-block;
+  transition-duration: $defaultDuration;
+  transition-property: transform;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .section4 {
@@ -445,13 +467,35 @@ body {
   margin: 20px;
   text-align: center;
   color: #d39f56;
+  animation-duration: 2.5s;
+  animation-name: aparecer;
 }
-
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .nosotrosintro p {
   display: flex;
   font-weight: 700;
   font-family: raleway;
   color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  animation-duration: 2.5s;
+  animation-name: aparecer;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sectionmapa {
@@ -491,21 +535,35 @@ body {
 }
 
 .sectiontienda div img {
-  width: 300px;
+  width: 270px;
   height: auto;
 }
 
 .catalogo {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   margin: 20px;
+  font-family: raleway;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
 }
-
 .catalogo div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: center;
+}
+.catalogo div div {
   width: 300px;
   height: 360px;
   border: 2px solid rgba(254, 254, 254, 0.756);
-  background-color: #f8f4e3;
+  background-color: #f8f4e3b8;
   margin: 20px;
   text-align: center;
   align-items: center;
@@ -516,22 +574,41 @@ body {
 }
 
 .catalogo div img {
-  width: auto;
-  height: 200px;
+  width: 270px;
+  height: auto;
   bottom: 20px;
   display: block;
+  border-radius: 6px;
 }
 
 .catalogo h2 {
   padding: 20px;
+  font-weight: 800;
 }
 
 .catalogo div h3 {
   padding: 20px 10px 5px 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.catalogo div button {
+  background-color: #0d3b5e;
+  color: #f8f4e3;
+  border-radius: 20px;
+  padding: 3px 20px;
+  font-weight: 500;
 }
 
-/*MEDIA QUERIES*/
-/*INDEX y NUESTRO MENU*/
+/** MEDIA QUERIES **/
+@media screen and (max-width: 1400px) {
+  .catalogo div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1107px) {
   .favoritos a {
     width: 150px;
@@ -613,6 +690,35 @@ body {
   .footer div {
     display: inline-block;
   }
+  /** SOBRE NOSOTROS **/
+  .sectionmapa div p {
+    margin: 0px 16px 0px 16px;
+  }
+  .sectionmapa iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 973px) {
+  /**SOBRE NOSOTROS**/
+  .nosotrosintro {
+    width: auto;
+    height: 350px;
+  }
+  .sectionmapa {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sectionmapa div p {
+    margin: 10px 10px 20px 10px;
+  }
+  .sectionmapa div {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 837px) {
@@ -644,7 +750,7 @@ body {
   }
 
   .promos img {
-    width: 480px;
+    width: 100%;
     height: auto;
   }
 
@@ -675,6 +781,22 @@ body {
 
   .section4 div img {
     width: 470px;
+  }
+  /** CONTACTO **/
+  .sectionco {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgcontacto img {
+    margin: 20px;
+  }
+  .formulariocontacto {
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
   }
 }
 
@@ -718,7 +840,10 @@ body {
   .promos div {
     width: 100%;
   }
-
+  footer iframe {
+    width: 100%;
+    height: auto;
+  }
   /*nuestro menu*/
   .section4 div img {
     width: 350px;
@@ -737,6 +862,59 @@ body {
   .section2 div img {
     width: 480px;
   }
+  /** SOBRE NOSOTROS **/
+  .nosotrosintro {
+    width: auto;
+    height: 330px;
+  }
+  .nosotrosintro p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  /** CONTACTO **/
+  .sectionco {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgcontacto img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+  }
+  .formulariocontacto {
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+
+  /** SOBRE NOSOTROS **/
+  .sectionmapa div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sectionmapa div iframe {
+    margin-left: 0px;
+  }
+  /** TIENDA **/
+  .sectiontienda div img {
+    display: none;
+  }
+  .sectiontienda {
+    background-image: url(../img/modelocaja.png);
+    height: 220px;
+  }
+  .tiendatexto {
+    font-weight: 700;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -747,7 +925,7 @@ body {
   }
 
   .promos img {
-    width: 350px;
+    width: 100%;
     height: auto;
   }
 
@@ -777,6 +955,33 @@ body {
     justify-items: center;
     align-content: center;
   }
+
+  /** CONTACTO **/
+  .imgcontacto img {
+    display: none;
+  }
+
+  /** SOBRE NOSOTROS **/
+  .nosotrosintro {
+    width: auto;
+    height: 280px;
+  }
+  .nosotrosintro p {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px 15px;
+  }
+  .sectionmapa div {
+    width: 100%;
+  }
+  .sectionmapa div p {
+    font-size: 16px;
+    padding: 0px 5px 0px 5px;
+  }
+  .sectionmapa div iframe {
+    height: 290px;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 393px) {
@@ -804,5 +1009,34 @@ body {
     align-items: center;
     justify-items: center;
     align-content: center;
+  }
+  /** SOBRE NOSOTROS **/
+  .nosotrosintro p {
+    display: none;
+  }
+
+  .nosotrosintro {
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  /** TIENDA **/
+  .catalogo div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .catalogo div div {
+    width: 280px;
+    height: 360px;
+  }
+  .catalogo div img {
+    width: 250px;
+    height: auto;
   }
 }

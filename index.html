@@ -16,6 +16,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!--CDN ANIMACION AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -66,10 +68,12 @@
     </header>
     <main class="main">
       <!--contiene todo el contenido de la pagina-->
-      <section class="favoritos" id="favoritos">
+      <section class="favoritos">
         <!-- divide el contenido principal en partes ej3-->
-        <h1>Tus favoritos</h1>
-        <h2>Tu felicidad de la mañana en taza</h2>
+        <h1 data-aos="fade-in" data-aos-duration="1400">Tus favoritos</h1>
+        <h2 data-aos="fade-in" data-aos-duration="1400">
+          Tu felicidad de la mañana en taza
+        </h2>
         <div>
           <!--IMAGEN-->
           <img src="./img/espresso.png" alt="2x1espresso" />
@@ -101,15 +105,17 @@
           <button>Favorito</button>
         </div>
         <!--BOTON-->
-        <a href="./pages/nuestromenu.html">Ordenar ahora</a>
+        <a class="botonordenar" href="./pages/nuestromenu.html"
+          >Ordenar ahora</a
+        >
       </section>
       <section class="promos">
-        <div>
-          <h2>SEGUNDO TITULO PROMOS CAFE</h2>
+        <div data-aos="fade-up">
+          <h2>NUESTRAS PROMOS</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
-            repudiandae?Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Cafe chico + Medialunas por solo $4800 Despierta con sabor.
+            Desayunos completos para mejorar tus mañanas solo en Cafe Sur.
+            ¡Oferta válida solo por hoy!
           </p>
         </div>
         <!--IMAGEN-->
@@ -201,7 +207,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="merchtext">
+          <div class="merchtext" data-aos="fade-up" data-aos-duration="1500">
             <img src="./img/logocircularazul.png" alt="logosur" />
             <p>¡El merch que estabas esperando ha llegado!</p>
             <p>Descubre diseños exclusivos y de alta calidad.</p>
@@ -215,7 +221,6 @@
       <section class="fotofinal">
         <!--imagen grande final-->
         <img src="./img/cafeteriacartel.png" alt="local" />
-        <a class="arriba" href="#favoritos">Ir arriba</a>
       </section>
     </main>
     <footer class="footer">
@@ -238,10 +243,10 @@
             <li>Redes sociales</li>
           </ul>
           <a href="https://www.instagram.com/" target="_blank"
-            ><img src="./img/instagram.png" alt=""
+            ><img src="./img/instagram.png" alt="logoig"
           /></a>
           <a href="https://wa.me/+54112211221" target="_blank"
-            ><img src="./img/whatsapp.png" alt=""
+            ><img src="./img/whatsapp.png" alt="logowpp"
           /></a>
         </div>
       </div>
@@ -255,5 +260,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

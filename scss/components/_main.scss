@@ -1,0 +1,425 @@
+/*! INDEX */
+.favoritos {
+  width: 100%;
+  height: calc(100vh - 128px);
+  text-align: center;
+  background-image: url(../img/cafesfondoliso.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: antiquewhite;
+  h1 {
+    font-family: raleway;
+    font-weight: nth($font-weight, 3);
+    color: $color-principal;
+    padding: 5px 0px 5px 0px;
+  }
+  h2 {
+    font-family: raleway;
+    font-style: oblique;
+    font-weight: nth($font-weight, 1);
+    padding: 0 0 5px 0;
+  }
+  div {
+    width: 300px;
+    height: 360px;
+    border: 2px solid rgba(254, 254, 254, 0.597);
+    background-color: rgba(254, 254, 254, 0.353);
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    img {
+      width: auto;
+      height: 200px;
+      bottom: 20px;
+      display: block;
+    }
+    h3 {
+      color: $color-principal;
+    }
+    h4 {
+      color: $color-terciario;
+      font-size: x-large;
+      text-align: center;
+      text-shadow: rgba(0, 0, 0, 0.082);
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #08243a;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 8px 15px 8px 15px;
+      margin: 0 5px 0 5px;
+      border-radius: 14px;
+      border-color: #08243a34;
+    }
+    a {
+      display: block;
+      margin: 0% 55% 0% 45%;
+      text-align: center;
+      padding: 8px 15px 8px 15px;
+      width: 12%;
+      background-color: #08243a;
+      color: white;
+      text-decoration: none;
+      border-radius: 14px;
+      position: static;
+    }
+  }
+}
+.promos {
+  margin: 30px;
+  font-family: raleway;
+  display: flex;
+  align-items: center;
+  div {
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    h2 {
+      font-weight: nth($font-weight, 4);
+    }
+  }
+  img {
+    width: 700px;
+    height: auto;
+  }
+}
+
+.carrusel {
+  margin: 30px;
+  display: inline-block;
+  h2 {
+    text-align: left;
+    margin: 20px 0 10px 0px;
+    font-family: raleway;
+    font-weight: nth($font-weight, 4);
+  }
+  .seccioncarrusel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    div {
+      img {
+        width: 50px;
+        height: auto;
+      }
+      p {
+        padding: 0px 0px 0px 20px;
+        text-align: center;
+        font-family: raleway;
+        font-size: x-large;
+        font-weight: nth($font-weight, 2);
+      }
+    }
+  }
+  .carousel-item {
+    margin: 10px 0px 10px 10px;
+    z-index: -11;
+  }
+}
+.merchtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotofinal {
+  background-color: #08243a;
+  margin-top: 20px;
+}
+/**NUESTRO MENU**/
+
+.nuestromenu {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondoazul.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  img {
+  }
+  .titulomenu {
+    h1 {
+      padding: 20px;
+      font-family: raleway;
+    }
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    div {
+      h2 {
+        color: #ffb85ce3;
+        ul {
+          width: 50%;
+          list-style: none;
+          padding: 5px 0px 5px 20px;
+          font-family: raleway;
+          font-weight: nth($font-weight, 3);
+          color: #ffb85ce3;
+          line-height: 35px;
+          li {
+          }
+        }
+      }
+    }
+    div {
+      h2 {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    div {
+    }
+    div {
+      img {
+        float: right;
+      }
+    }
+  }
+  .section3 {
+    background-color: #f8f4e3;
+    padding: 20px;
+    h2 {
+      color: #d39f56;
+      text-align: center;
+      padding: 30px;
+    }
+    div {
+      display: inline-block;
+      text-align: center;
+      margin: 5px 20px 10px 20px;
+      img {
+        width: auto;
+        height: 200px;
+      }
+      h3 {
+        color: #d39f56;
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: #d39f56;
+        text-decoration: none;
+        font-weight: nth($font-weight, 3);
+        color: #08243a;
+        padding: 8px 25px 8px 25px;
+        margin: 0 5px 0 5px;
+        border-radius: 20px;
+        border-color: #d39f5627;
+      }
+    }
+  }
+  .section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+      img {
+        padding: 20px;
+      }
+    }
+    div {
+      h2 {
+        color: #ffb85ce3;
+      }
+      ul {
+        list-style: none;
+        padding: 20px;
+        color: #ffb85ce3;
+        font-family: raleway;
+        font-weight: nth($font-weight, 3);
+        li {
+        }
+      }
+    }
+  }
+}
+/**SOBRE NOSOTROS**/
+.nosotrosintro {
+  width: auto;
+  height: 430px;
+  background-image: url(../img/ondalocal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f8f4e3;
+  h1 {
+    margin: 20px;
+    text-align: center;
+    color: #d39f56;
+  }
+  p {
+    display: flex;
+    font-weight: nth($font-weight, 3);
+    font-family: raleway;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+.sectionmapa {
+  background-color: #f8f4e3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  align-content: center;
+  div {
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    iframe {
+      margin-left: 20px;
+    }
+  }
+  div {
+    h3 {
+    }
+    p {
+    }
+  }
+}
+/** CONTACTO **/
+.maincontactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/cafecontactos.jpg);
+  .sectionco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #d39f567a;
+    border-radius: 20px;
+    .imgcontacto {
+      img {
+        width: 300px;
+        height: auto;
+        margin: 30px;
+        border-radius: 80%;
+      }
+    }
+    .formulariocontacto {
+      margin: 20px;
+      padding: 20px;
+      font-family: raleway;
+      font-weight: bold;
+      color: #08243a;
+      div {
+        h1 {
+          padding: 5px 0px 15px 0px;
+          font-family: raleway;
+          font-weight: nth($font-weight, 3);
+        }
+      }
+    }
+    .form-floating .form-control-plaintext:focus,
+    .form-floating > .form-control-plaintext:not(:placeholder-shown),
+    .form-floating > .form-control:focus,
+    .form-floating > .form-control:not(:placeholder-shown) {
+      margin: 10px 0px;
+    }
+  }
+}
+/** TIENDA **/
+.sectiontienda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  background-color: #08243a;
+  .tiendatexto {
+    font-family: raleway;
+    color: #f8f4e3;
+    align-content: center;
+    h1 {
+    }
+    p {
+    }
+  }
+  div {
+    img {
+      width: 270px;
+      height: auto;
+    }
+  }
+}
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  font-family: raleway;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  h2 {
+    padding: 20px;
+    font-weight: 800;
+  }
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    div {
+      width: 300px;
+      height: 360px;
+      border: 2px solid rgba(254, 254, 254, 0.756);
+      background-color: #f8f4e3b8;
+      margin: 20px;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      border-radius: 15px;
+      display: inline-block;
+      padding: 15px;
+      img {
+        width: 270px;
+        height: auto;
+        bottom: 20px;
+        display: block;
+        border-radius: 6px;
+      }
+      h3 {
+        padding: 20px 10px 5px 10px;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      h4 {
+      }
+      button {
+        background-color: #0d3b5e;
+        color: #f8f4e3;
+        border-radius: 20px;
+        padding: 3px 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}

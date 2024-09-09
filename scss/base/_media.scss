@@ -1,0 +1,441 @@
+@media screen and (max-width: 1400px) {
+  .catalogo div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1107px) {
+  .favoritos a {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .favoritos a {
+    width: 20%;
+    margin: 0% 50% 0% 40%;
+  }
+
+  .favoritos {
+    height: calc(100vh - 90px);
+    width: 100%;
+  }
+
+  .favoritos h1 {
+    font-size: 30px;
+  }
+
+  .favoritos h2 {
+    font-size: 25px;
+  }
+
+  .favoritos div img {
+    width: auto;
+    height: 150px;
+  }
+
+  .favoritos div h3 {
+    font-size: 20px;
+  }
+
+  .terceraimg {
+    display: none;
+  }
+
+  .favoritos div {
+    width: 260px;
+    height: 300px;
+    margin: 8px;
+  }
+
+  .promos img {
+    width: 570px;
+    height: auto;
+  }
+
+  .seccioncarrusel div p {
+    padding: 5px 0px 0px 20px;
+    font-size: large;
+  }
+
+  /*nuestro menu*/
+  .section3 div img {
+    width: auto;
+    height: 160px;
+  }
+
+  .section3 h3 {
+    font-size: 25px;
+  }
+
+  .section3 div button {
+    padding: 6px 20px 6px 20px;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer div {
+    display: inline-block;
+  }
+  /** SOBRE NOSOTROS **/
+  .sectionmapa div p {
+    margin: 0px 16px 0px 16px;
+  }
+  .sectionmapa iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 973px) {
+  /**SOBRE NOSOTROS**/
+  .nosotrosintro {
+    width: auto;
+    height: 350px;
+  }
+  .sectionmapa {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sectionmapa div p {
+    margin: 10px 10px 20px 10px;
+  }
+  .sectionmapa div {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .favoritos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .favoritos div {
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .favoritos div button {
+    padding: 3px 10px 3px 10px;
+  }
+
+  .favoritos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .promos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .promos div {
+    margin-right: 10px;
+  }
+
+  .seccioncarrusel div p {
+    font-size: 14px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer div {
+    display: inline-block;
+  }
+
+  /*NUESTRO MENU*/
+  .section2 div img {
+    width: 600px;
+  }
+
+  .section4 div img {
+    width: 470px;
+  }
+  /** CONTACTO **/
+  .sectionco {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgcontacto img {
+    margin: 20px;
+  }
+  .formulariocontacto {
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .promos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .seccioncarrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .container ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .favoritos a {
+    font-size: 12px;
+    width: 140px;
+  }
+
+  .favoritos div button {
+    font-size: 14px;
+  }
+
+  .promos div {
+    width: 100%;
+  }
+  footer iframe {
+    width: 100%;
+    height: auto;
+  }
+  /*nuestro menu*/
+  .section4 div img {
+    width: 350px;
+  }
+
+  .section3 div img {
+    width: auto;
+    height: 130px;
+  }
+
+  .cafetransparente {
+    height: 120px;
+    width: auto;
+  }
+
+  .section2 div img {
+    width: 480px;
+  }
+  /** SOBRE NOSOTROS **/
+  .nosotrosintro {
+    width: auto;
+    height: 330px;
+  }
+  .nosotrosintro p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  /** CONTACTO **/
+  .sectionco {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgcontacto img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+  }
+  .formulariocontacto {
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+
+  /** SOBRE NOSOTROS **/
+  .sectionmapa div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sectionmapa div iframe {
+    margin-left: 0px;
+  }
+  /** TIENDA **/
+  .sectiontienda div img {
+    display: none;
+  }
+  .sectiontienda {
+    background-image: url(../img/modelocaja.png);
+    height: 220px;
+  }
+  .tiendatexto {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .favoritos a {
+    font-size: 12px;
+    width: 140px;
+    font-weight: 700;
+  }
+
+  .promos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section2 div img {
+    display: none;
+  }
+
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section3 div {
+    margin: 5px 30px 10px 30px;
+  }
+
+  .section4 div img {
+    width: 270px;
+  }
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+
+  /** CONTACTO **/
+  .imgcontacto img {
+    display: none;
+  }
+
+  /** SOBRE NOSOTROS **/
+  .nosotrosintro {
+    width: auto;
+    height: 280px;
+  }
+  .nosotrosintro p {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px 15px;
+  }
+  .sectionmapa div {
+    width: 100%;
+  }
+  .sectionmapa div p {
+    font-size: 16px;
+    padding: 0px 5px 0px 5px;
+  }
+  .sectionmapa div iframe {
+    height: 290px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .promos h2 {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .promos div {
+    width: 100%;
+  }
+
+  .carrusel h2 {
+    text-align: center;
+    margin: 20px 0 10px 0px;
+    font-family: raleway;
+    font-weight: 800;
+    font-size: 22px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  /** SOBRE NOSOTROS **/
+  .nosotrosintro p {
+    display: none;
+  }
+
+  .nosotrosintro {
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /** TIENDA **/
+  .catalogo div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .catalogo div div {
+    width: 280px;
+    height: 360px;
+  }
+  .catalogo div img {
+    width: 250px;
+    height: auto;
+  }
+}

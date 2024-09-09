@@ -1,0 +1,45 @@
+//*VARIABLES*//
+$color-principal: #08243a;
+$color-secundario: #f8f4e3;
+$color-terciario: #ffb95c;
+
+/*LISTAS*/
+$font-weight: 500, 600, 700, 800;
+
+/*MAPAS*/
+$boton1: (
+  bg-color: #08243a,
+  color-text: white,
+  border-radius: 14px,
+  border-color: #08243a34,
+);
+
+.favoritos div button {
+  background-color: map-get($boton1, bg-color);
+  color: map-get($boton1, color-text);
+  border-radius: map-get($boton1, border-radius);
+  border-color: map-get($boton1, border-color);
+}
+
+/*EXTENDS*/
+%enlaces {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #08243a;
+}
+
+.botonordenar {
+  @extend %enlaces;
+}
+
+/*MIXIN*/
+@mixin botones($botones) {
+  @if $botones == #08243a {
+    border: solid 2px #ffb95c;
+  } @else {
+    border: solid 2px #08243a;
+  }
+}
+.catalogo div div button {
+  @include botones(#08243a);
+}

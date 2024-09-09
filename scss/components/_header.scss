@@ -1,0 +1,48 @@
+//**INDEX**//
+header {
+  img {
+    width: 50px;
+    height: auto;
+  }
+  .bg-body-tertiary {
+    background-image: url(../img/texturaheader.png);
+    background-color: #f8f4e3c5;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    font-family: raleway;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    nav {
+      ul {
+        list-style: none;
+      }
+    }
+  }
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+          font-family: Raleway;
+          font-weight: 500;
+          text-decoration: none;
+          color: #08243a;
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar {
+    ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
