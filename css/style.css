@@ -526,8 +526,18 @@ body {
   justify-items: center;
   padding: 20px;
   background-color: #08243a;
+  transition: 1s;
 }
-
+.sectiontienda:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    60deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(8, 36, 58, 1) 35%,
+    rgba(13, 59, 94, 1) 100%
+  );
+  scale (1.2s);
+}
 .tiendatexto {
   font-family: raleway;
   color: #f8f4e3;
