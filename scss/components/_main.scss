@@ -141,8 +141,6 @@
   background-size: cover;
   background-position: center;
   color: white;
-  img {
-  }
   .titulomenu {
     h1 {
       padding: 20px;
@@ -164,16 +162,6 @@
           font-weight: nth($font-weight, 3);
           color: #ffb85ce3;
           line-height: 35px;
-          li {
-          }
-        }
-      }
-    }
-    div {
-      h2 {
-        ul {
-          li {
-          }
         }
       }
     }
@@ -183,8 +171,6 @@
     grid-template-columns: 1fr 1fr;
     grid-column-start: 2;
     grid-column-end: 3;
-    div {
-    }
     div {
       img {
         float: right;
@@ -241,8 +227,6 @@
         color: #ffb85ce3;
         font-family: raleway;
         font-weight: nth($font-weight, 3);
-        li {
-        }
       }
     }
   }
@@ -287,12 +271,6 @@
     justify-content: space-evenly;
     iframe {
       margin-left: 20px;
-    }
-  }
-  div {
-    h3 {
-    }
-    p {
     }
   }
 }
