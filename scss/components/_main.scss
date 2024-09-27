@@ -1,7 +1,7 @@
 /*! INDEX */
 .favoritos {
   width: 100%;
-  height: calc(100vh - 128px);
+  height: calc(100vh - 60px);
   text-align: center;
   background-image: url(../img/cafesfondoliso.png);
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     height: 360px;
     border: 2px solid rgba(254, 254, 254, 0.597);
     background-color: rgba(254, 254, 254, 0.353);
-    margin: 20px;
+    margin: 12px;
     text-align: center;
     border-radius: 15px;
     display: inline-block;
@@ -210,10 +210,12 @@
     }
   }
   .section4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     div {
       img {
+        height: auto;
         padding: 20px;
       }
     }
@@ -331,10 +333,6 @@
     font-family: raleway;
     color: #f8f4e3;
     align-content: center;
-    h1 {
-    }
-    p {
-    }
   }
   div {
     img {
@@ -388,8 +386,6 @@
         padding: 20px 10px 5px 10px;
         font-weight: 700;
         font-size: 24px;
-      }
-      h4 {
       }
       button {
         background-color: #0d3b5e;

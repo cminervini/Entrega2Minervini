@@ -1,9 +1,43 @@
 @media screen and (max-width: 1400px) {
+  /** TIENDA **/
   .catalogo div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  /** INDEX **/
+  .favoritos {
+    box-sizing: content-box;
+    width: 100%;
+    height: calc(100vh - 90px);
+  }
+  .favoritos h1 {
+    padding: 0px 0px 0px;
+  }
+  .favoritos h2 {
+    font-size: 23px;
+  }
+  .favoritos div {
+    box-sizing: content-box;
+    padding: 20px 5px 20px 5px;
+    width: 270px;
+    height: 300px;
+    margin: 8px;
+  }
+
+  .favoritos div img {
+    width: auto;
+    height: 180px;
+  }
+
+  .favoritos div h3 {
+    font-size: 24px;
+  }
+  .promos img {
+    width: 600px;
+    height: auto;
   }
 }
 
@@ -11,17 +45,28 @@
   .favoritos a {
     width: 150px;
   }
+  .carrusel .seccioncarrusel div p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1030px) {
-  .favoritos a {
-    width: 20%;
-    margin: 0% 50% 0% 40%;
+  .favoritos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
-  .favoritos {
-    height: calc(100vh - 90px);
-    width: 100%;
+  .favoritos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
   }
 
   .favoritos h1 {
@@ -32,9 +77,17 @@
     font-size: 25px;
   }
 
+  .favoritos div {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
   .favoritos div img {
     width: auto;
     height: 150px;
+    margin: auto;
   }
 
   .favoritos div h3 {
@@ -98,6 +151,15 @@
 }
 
 @media screen and (max-width: 973px) {
+  /** INDEX **/
+  .promos img {
+    width: 480px;
+    height: auto;
+  }
+  .carrusel .seccioncarrusel div p {
+    font-size: 17px;
+  }
+
   /**SOBRE NOSOTROS**/
   .nosotrosintro {
     width: auto;
@@ -147,17 +209,16 @@
     margin-bottom: 10px;
   }
 
-  .promos img {
-    width: 100%;
-    height: auto;
-  }
-
   .promos div {
     margin-right: 10px;
   }
 
   .seccioncarrusel div p {
     font-size: 14px;
+  }
+  .carrusel .seccioncarrusel div img {
+    width: 40px;
+    height: auto;
   }
 
   .footer {
@@ -195,28 +256,6 @@
     margin: 20px;
     padding: 20px;
     font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 753px) {
-  .promos {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .seccioncarrusel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carrusel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -270,7 +309,40 @@
   }
 }
 
+@media screen and (max-width: 753px) {
+  .promos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  .carrusel .seccioncarrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seccioncarrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 688px) {
+  /** INDEX **/
+  .carrusel .seccioncarrusel div p {
+    font-size: 15px;
+  }
+
   /** CONTACTO **/
   .sectionco {
     width: 80%;
@@ -316,6 +388,7 @@
 }
 
 @media screen and (max-width: 480px) {
+  /** INDEX **/
   .favoritos a {
     font-size: 12px;
     width: 140px;
@@ -325,6 +398,16 @@
   .promos img {
     width: 100%;
     height: auto;
+  }
+
+  .carrusel .seccioncarrusel div img {
+    width: 30px;
+    height: auto;
+  }
+  /** NUESTRO MENU **/
+  .section1 {
+    display: flex;
+    flex-direction: column;
   }
 
   .section2 div img {
@@ -339,19 +422,25 @@
   }
 
   .section3 div {
-    margin: 5px 30px 10px 30px;
+    margin: 5px 0px 10px 0px;
+  }
+
+  .section3 div h3 {
+    font-size: 20px;
+  }
+
+  .section3 div img {
+    width: auto;
+    height: 120px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
   }
 
   .section4 div img {
     width: 270px;
-  }
-  .section4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
   }
 
   /** CONTACTO **/
@@ -383,6 +472,7 @@
 }
 
 @media screen and (max-width: 393px) {
+  /** INDEX **/
   .promos h2 {
     font-size: 22px;
     font-weight: 800;
@@ -400,14 +490,12 @@
     font-size: 22px;
   }
 
-  .section4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
+  .footer img {
+    width: auto;
+    height: 100px;
+    margin: 15px;
   }
+
   /** SOBRE NOSOTROS **/
   .nosotrosintro p {
     display: none;
@@ -420,6 +508,38 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+  }
+
+  /** NUESTRO MENU **/
+  .cafetransparente {
+    height: 80px;
+    width: auto;
+  }
+
+  .section3 {
+    padding: 0px;
+  }
+
+  .section3 div {
+    margin: 10px 5px 10px 5px;
+  }
+
+  .section3 div img {
+    width: auto;
+    height: 100px;
+  }
+
+  .section3 div button {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
   }
 
   /** TIENDA **/

@@ -50,6 +50,7 @@
   color: #08243a;
   transition: 0.5s;
 }
+
 .header nav ul li a:hover {
   color: #0d3b5e;
   font-weight: 700;
@@ -83,7 +84,7 @@
 
 .favoritos {
   width: 100%;
-  height: calc(100vh - 128px);
+  height: calc(100vh - 60px);
   text-align: center;
   background-image: url(../img/cafesfondoliso.png);
   background-repeat: no-repeat;
@@ -98,12 +99,14 @@
   height: 360px;
   border: 2px solid rgba(254, 254, 254, 0.597);
   background-color: rgba(254, 254, 254, 0.353);
-  margin: 20px;
+  margin: 12px;
   text-align: center;
   border-radius: 15px;
   display: inline-block;
+  box-sizing: content-box;
   transition: 0.8s;
 }
+
 .favoritos div:hover {
   transform: scale(1.2);
   -webkit-box-shadow: 18px 14px 34px -12px rgba(0, 0, 0, 0.29);
@@ -140,6 +143,7 @@
   border-color: #08243a34;
   transition: 0.5s;
 }
+
 .favoritos div button:hover {
   background-color: #ffb95c;
   color: #08243a;
@@ -159,11 +163,13 @@
   position: static;
   transition: 0.5s;
 }
+
 .favoritos a:hover {
   background-color: #ffb95c;
   color: #08243a;
   font-weight: 700;
 }
+
 .promos {
   margin: 30px;
   font-family: raleway;
@@ -186,6 +192,7 @@
   height: auto;
   transition: 0.4s;
 }
+
 .promos img:hover {
   -webkit-box-shadow: 18px 14px 48px -12px rgba(209, 209, 209, 1);
   -moz-box-shadow: 18px 14px 48px -12px rgba(209, 209, 209, 1);
@@ -203,6 +210,7 @@
   width: 50px;
   height: auto;
 }
+
 .seccioncarrusel div p {
   padding: 0px 0px 0px 20px;
   text-align: center;
@@ -338,7 +346,7 @@
 .section3 div {
   display: inline-block;
   text-align: center;
-  margin: 5px 20px 10px 20px;
+  margin: 5px 0px 10px 0px;
 }
 
 .section3 div img {
@@ -357,12 +365,13 @@
   border-color: #d39f5627;
   transition: 0.5s;
 }
+
 .section3 div button:hover {
   background-color: #08243a;
   color: #d39f56;
   font-weight: 700;
   display: inline-block;
-  transition-duration: $defaultDuration;
+  transition-duration: 0.5s;
   transition-property: transform;
 
   @include hideTapHighlightColor();
@@ -375,11 +384,13 @@
 }
 
 .section4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section4 div img {
+  height: auto;
   padding: 20px;
 }
 
@@ -394,8 +405,6 @@
   font-family: raleway;
   font-weight: 700;
 }
-
-/**ID no se puede repetir ni reutilizarlo,*/
 
 /** body*/
 body {
@@ -470,14 +479,17 @@ body {
   animation-duration: 2.5s;
   animation-name: aparecer;
 }
+
 @keyframes aparecer {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .nosotrosintro p {
   display: flex;
   font-weight: 700;
@@ -489,10 +501,12 @@ body {
   animation-duration: 2.5s;
   animation-name: aparecer;
 }
+
 @keyframes aparecer {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -528,6 +542,7 @@ body {
   background-color: #08243a;
   transition: 1s;
 }
+
 .sectiontienda:hover {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -536,8 +551,9 @@ body {
     rgba(8, 36, 58, 1) 35%,
     rgba(13, 59, 94, 1) 100%
   );
-  scale (1.2s);
+  transform: scale (1.2s);
 }
+
 .tiendatexto {
   font-family: raleway;
   color: #f8f4e3;
@@ -560,6 +576,7 @@ body {
   justify-content: center;
   align-items: stretch;
 }
+
 .catalogo div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -569,6 +586,7 @@ body {
   align-items: stretch;
   justify-items: center;
 }
+
 .catalogo div div {
   width: 300px;
   height: 360px;
@@ -601,6 +619,7 @@ body {
   font-weight: 700;
   font-size: 24px;
 }
+
 .catalogo div button {
   background-color: #0d3b5e;
   color: #f8f4e3;
@@ -610,30 +629,80 @@ body {
 }
 
 /** MEDIA QUERIES **/
+
 @media screen and (max-width: 1400px) {
+  /** TIENDA **/
   .catalogo div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+
+  /** INDEX **/
+  .favoritos {
+    box-sizing: content-box;
+    width: 100%;
+    height: calc(100vh - 90px);
+  }
+  .favoritos h1 {
+    padding: 0px 0px 0px;
+  }
+  .favoritos h2 {
+    font-size: 23px;
+  }
+  .favoritos div {
+    box-sizing: content-box;
+    padding: 20px 5px 20px 5px;
+    width: 270px;
+    height: 300px;
+    margin: 8px;
+  }
+  .favoritos div img {
+    width: auto;
+    height: 180px;
+  }
+  .favoritos div h3 {
+    font-size: 24px;
+  }
+
+  .promos img {
+    width: 600px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1107px) {
+  /** INDEX **/
   .favoritos a {
     width: 150px;
+  }
+  .favoritos div {
+    margin: 8px;
+  }
+  .carrusel .seccioncarrusel div p {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1030px) {
-  .favoritos a {
-    width: 20%;
-    margin: 0% 50% 0% 40%;
+  /** INDEX **/
+  .favoritos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
-  .favoritos {
-    height: calc(100vh - 90px);
-    width: 100%;
+  .favoritos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
   }
 
   .favoritos h1 {
@@ -644,9 +713,17 @@ body {
     font-size: 25px;
   }
 
+  .favoritos div {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
   .favoritos div img {
     width: auto;
     height: 150px;
+    margin: auto;
   }
 
   .favoritos div h3 {
@@ -673,7 +750,7 @@ body {
     font-size: large;
   }
 
-  /*nuestro menu*/
+  /** nuestro menu **/
   .section3 div img {
     width: auto;
     height: 160px;
@@ -700,21 +777,32 @@ body {
   .footer div {
     display: inline-block;
   }
+
   /** SOBRE NOSOTROS **/
   .sectionmapa div p {
     margin: 0px 16px 0px 16px;
   }
+
   .sectionmapa iframe {
     height: 300px;
   }
 }
 
 @media screen and (max-width: 973px) {
+  /** INDEX **/
+  .promos img {
+    width: 480px;
+    height: auto;
+  }
+  .carrusel .seccioncarrusel div p {
+    font-size: 17px;
+  }
   /**SOBRE NOSOTROS**/
   .nosotrosintro {
     width: auto;
     height: 350px;
   }
+
   .sectionmapa {
     display: flex;
     flex-direction: column-reverse;
@@ -726,12 +814,14 @@ body {
   .sectionmapa div p {
     margin: 10px 10px 20px 10px;
   }
+
   .sectionmapa div {
     width: 75%;
   }
 }
 
 @media screen and (max-width: 837px) {
+  /** INDEX **/
   .favoritos {
     height: auto;
     display: flex;
@@ -759,17 +849,16 @@ body {
     margin-bottom: 10px;
   }
 
-  .promos img {
-    width: 100%;
-    height: auto;
-  }
-
   .promos div {
     margin-right: 10px;
   }
 
   .seccioncarrusel div p {
     font-size: 14px;
+  }
+  .carrusel .seccioncarrusel div img {
+    width: 40px;
+    height: auto;
   }
 
   .footer {
@@ -792,6 +881,7 @@ body {
   .section4 div img {
     width: 470px;
   }
+
   /** CONTACTO **/
   .sectionco {
     display: flex;
@@ -800,9 +890,11 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   .imgcontacto img {
     margin: 20px;
   }
+
   .formulariocontacto {
     margin: 20px;
     padding: 20px;
@@ -810,29 +902,8 @@ body {
   }
 }
 
-@media screen and (max-width: 753px) {
-  .promos {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .seccioncarrusel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carrusel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 772px) {
+  /** INDEX **/
   .container ul {
     display: flex;
     flex-direction: column;
@@ -850,10 +921,12 @@ body {
   .promos div {
     width: 100%;
   }
+
   footer iframe {
     width: 100%;
     height: auto;
   }
+
   /*nuestro menu*/
   .section4 div img {
     width: 350px;
@@ -861,7 +934,7 @@ body {
 
   .section3 div img {
     width: auto;
-    height: 130px;
+    height: 120px;
   }
 
   .cafetransparente {
@@ -872,17 +945,53 @@ body {
   .section2 div img {
     width: 480px;
   }
+
   /** SOBRE NOSOTROS **/
   .nosotrosintro {
     width: auto;
     height: 330px;
   }
+
   .nosotrosintro p {
     font-size: 18px;
   }
 }
 
+@media screen and (max-width: 753px) {
+  /** INDEX **/
+  .promos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  .carrusel .seccioncarrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seccioncarrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 688px) {
+  /** INDEX **/
+  .carrusel .seccioncarrusel div p {
+    font-size: 15px;
+  }
+
   /** CONTACTO **/
   .sectionco {
     width: 80%;
@@ -892,11 +1001,13 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   .imgcontacto img {
     width: 200px;
     height: auto;
     margin: 20px;
   }
+
   .formulariocontacto {
     width: 100%;
     margin: 0px 20px 0px 20px;
@@ -911,23 +1022,28 @@ body {
     align-items: center;
     flex-wrap: wrap;
   }
+
   .sectionmapa div iframe {
     margin-left: 0px;
   }
+
   /** TIENDA **/
   .sectiontienda div img {
     display: none;
   }
+
   .sectiontienda {
     background-image: url(../img/modelocaja.png);
     height: 220px;
   }
+
   .tiendatexto {
     font-weight: 700;
   }
 }
 
 @media screen and (max-width: 480px) {
+  /** INDEX **/
   .favoritos a {
     font-size: 12px;
     width: 140px;
@@ -939,6 +1055,16 @@ body {
     height: auto;
   }
 
+  .carrusel .seccioncarrusel div img {
+    width: 30px;
+    height: auto;
+  }
+
+  /** NUESTRO MENU **/
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
   .section2 div img {
     display: none;
   }
@@ -951,19 +1077,25 @@ body {
   }
 
   .section3 div {
-    margin: 5px 30px 10px 30px;
+    margin: 5px 0px 10px 0px;
+  }
+
+  .section3 div h3 {
+    font-size: 20px;
+  }
+
+  .section3 div img {
+    width: auto;
+    height: 120px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
   }
 
   .section4 div img {
     width: 270px;
-  }
-  .section4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
   }
 
   /** CONTACTO **/
@@ -976,18 +1108,22 @@ body {
     width: auto;
     height: 280px;
   }
+
   .nosotrosintro p {
     font-size: 17px;
     font-weight: 600;
     margin: 0px 15px;
   }
+
   .sectionmapa div {
     width: 100%;
   }
+
   .sectionmapa div p {
     font-size: 16px;
     padding: 0px 5px 0px 5px;
   }
+
   .sectionmapa div iframe {
     height: 290px;
     width: auto;
@@ -995,6 +1131,7 @@ body {
 }
 
 @media screen and (max-width: 393px) {
+  /** INDEX **/
   .promos h2 {
     font-size: 22px;
     font-weight: 800;
@@ -1012,14 +1149,12 @@ body {
     font-size: 22px;
   }
 
-  .section4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
+  .footer img {
+    width: auto;
+    height: 100px;
+    margin: 15px;
   }
+
   /** SOBRE NOSOTROS **/
   .nosotrosintro p {
     display: none;
@@ -1033,6 +1168,39 @@ body {
     align-items: center;
     flex-direction: column;
   }
+
+  /** NUESTRO MENU **/
+  .cafetransparente {
+    height: 80px;
+    width: auto;
+  }
+
+  .section3 {
+    padding: 0px;
+  }
+
+  .section3 div {
+    margin: 10px 5px 10px 5px;
+  }
+
+  .section3 div img {
+    width: auto;
+    height: 100px;
+  }
+
+  .section3 div button {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+
   /** TIENDA **/
   .catalogo div {
     width: 100%;
@@ -1041,10 +1209,12 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
   }
+
   .catalogo div div {
     width: 280px;
     height: 360px;
   }
+
   .catalogo div img {
     width: 250px;
     height: auto;
