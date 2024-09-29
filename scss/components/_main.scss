@@ -118,7 +118,6 @@
   }
   .carousel-item {
     margin: 10px 0px 10px 10px;
-    z-index: -11;
   }
 }
 .merchtext {
@@ -309,6 +308,11 @@
           padding: 5px 0px 15px 0px;
           font-family: raleway;
           font-weight: nth($font-weight, 3);
+        }
+      }
+      div {
+        input {
+          padding: 5px 8px 5px 8px;
         }
       }
     }

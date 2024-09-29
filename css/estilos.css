@@ -7,6 +7,12 @@
   border-radius: 14px;
   border-color: #08243a34; }
 
+.formulariocontacto div input {
+  background-color: #08243a;
+  color: white;
+  border-radius: 14px;
+  border-color: #08243a34; }
+
 /*EXTENDS*/
 .botonordenar {
   text-decoration: none;
@@ -158,8 +164,7 @@ header .navbar ul {
       font-size: x-large;
       font-weight: 600; }
   .carrusel .carousel-item {
-    margin: 10px 0px 10px 10px;
-    z-index: -11; }
+    margin: 10px 0px 10px 10px; }
 
 .merchtext {
   display: flex;
@@ -313,6 +318,8 @@ header .navbar ul {
         padding: 5px 0px 15px 0px;
         font-family: raleway;
         font-weight: 700; }
+      .maincontactos .sectionco .formulariocontacto div input {
+        padding: 5px 8px 5px 8px; }
     .maincontactos .sectionco .form-floating .form-control-plaintext:focus,
     .maincontactos .sectionco .form-floating > .form-control-plaintext:not(:placeholder-shown),
     .maincontactos .sectionco .form-floating > .form-control:focus,
@@ -573,18 +580,19 @@ header .navbar ul {
   .section4 div img {
     width: 470px; }
   /** CONTACTO **/
-  .sectionco {
+  .maincontactos .sectionco .formulariocontacto {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
   .imgcontacto img {
     margin: 20px; }
   .formulariocontacto {
+    flex: 1;
     margin: 20px;
-    padding: 20px;
-    font-size: 18px; } }
+    padding: 20px; }
+  .formulariocontacto div input {
+    font-size: 15px; }
+  .formulariocontacto label {
+    font-size: 16px; } }
 
 @media screen and (max-width: 772px) {
   .container ul {
@@ -637,27 +645,33 @@ header .navbar ul {
   .carrusel {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  /** CONTACTO **/
+  .maincontactos .sectionco .formulariocontacto {
+    display: flex;
+    flex-direction: column;
+    width: inherit; }
+  .formulariocontacto {
+    flex: 1; } }
 
 @media screen and (max-width: 688px) {
   /** INDEX **/
   .carrusel .seccioncarrusel div p {
     font-size: 15px; }
   /** CONTACTO **/
-  .sectionco {
-    width: 80%;
+  .maincontactos .sectionco .imgcontacto img {
+    width: 220px;
+    margin: 15px; }
+  .imgcontacto {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; }
-  .imgcontacto img {
-    width: 200px;
-    height: auto;
-    margin: 20px; }
-  .formulariocontacto {
-    width: 100%;
-    margin: 0px 20px 0px 20px; }
+    align-items: center;
+    justify-content: center; }
+  .form-floating > .form-select {
+    font-size: 12px; }
+  .formulariocontacto div input {
+    font-size: 15px; }
+  .formulariocontacto label {
+    font-size: 16px; }
   /** SOBRE NOSOTROS **/
   .sectionmapa div {
     display: flex;
@@ -677,8 +691,17 @@ header .navbar ul {
   .tiendatexto {
     font-weight: 700; } }
 
+@media screen and (max-width: 591px) {
+  .imgcontacto {
+    display: none; }
+  .maincontactos .sectionco {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
 @media screen and (max-width: 480px) {
   /** INDEX **/
+  .favoritos h2 {
+    font-size: 18px; }
   .favoritos a {
     font-size: 12px;
     width: 140px;
@@ -788,7 +811,10 @@ header .navbar ul {
     justify-content: center; }
   .catalogo div div {
     width: 280px;
-    height: 360px; }
+    height: 340px; }
   .catalogo div img {
+    width: 250px;
+    height: auto; }
+  .catalogo div div img {
     width: 250px;
     height: auto; } }

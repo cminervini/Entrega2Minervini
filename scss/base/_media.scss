@@ -242,20 +242,25 @@
     width: 470px;
   }
   /** CONTACTO **/
-  .sectionco {
+  .maincontactos .sectionco .formulariocontacto {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
   .imgcontacto img {
     margin: 20px;
   }
   .formulariocontacto {
+    flex: 1;
     margin: 20px;
     padding: 20px;
-    font-size: 18px;
+  }
+
+  .formulariocontacto div input {
+    font-size: 15px;
+  }
+
+  .formulariocontacto label {
+    font-size: 16px;
   }
 }
 
@@ -335,6 +340,16 @@
     flex-direction: column;
     align-items: center;
   }
+
+  /** CONTACTO **/
+  .maincontactos .sectionco .formulariocontacto {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+  .formulariocontacto {
+    flex: 1;
+  }
 }
 
 @media screen and (max-width: 688px) {
@@ -344,22 +359,26 @@
   }
 
   /** CONTACTO **/
-  .sectionco {
-    width: 80%;
+  .maincontactos .sectionco .imgcontacto img {
+    width: 220px;
+    margin: 15px;
+  }
+  .imgcontacto {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
-  .imgcontacto img {
-    width: 200px;
-    height: auto;
-    margin: 20px;
+
+  .form-floating > .form-select {
+    font-size: 12px;
   }
-  .formulariocontacto {
-    width: 100%;
-    margin: 0px 20px 0px 20px;
+
+  .formulariocontacto div input {
+    font-size: 15px;
+  }
+
+  .formulariocontacto label {
+    font-size: 16px;
   }
 
   /** SOBRE NOSOTROS **/
@@ -387,8 +406,21 @@
   }
 }
 
+@media screen and (max-width: 591px) {
+  .imgcontacto {
+    display: none;
+  }
+  .maincontactos .sectionco {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 480px) {
   /** INDEX **/
+  .favoritos h2 {
+    font-size: 18px;
+  }
   .favoritos a {
     font-size: 12px;
     width: 140px;
@@ -552,9 +584,14 @@
   }
   .catalogo div div {
     width: 280px;
-    height: 360px;
+    height: 340px;
   }
   .catalogo div img {
+    width: 250px;
+    height: auto;
+  }
+
+  .catalogo div div img {
     width: 250px;
     height: auto;
   }

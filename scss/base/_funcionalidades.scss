@@ -20,6 +20,12 @@ $boton1: (
   border-radius: map-get($boton1, border-radius);
   border-color: map-get($boton1, border-color);
 }
+.formulariocontacto div input {
+  background-color: map-get($boton1, bg-color);
+  color: map-get($boton1, color-text);
+  border-radius: map-get($boton1, border-radius);
+  border-color: map-get($boton1, border-color);
+}
 
 /*EXTENDS*/
 %enlaces {
